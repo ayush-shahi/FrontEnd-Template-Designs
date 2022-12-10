@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Effect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --borcol:#ffa46f;
+            --mcolo:aqua;
+            --icolo:aqua;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        .main{
+            background-color: var(--mcolo);
+            margin:0;
+            height:100vh;
+            width:100vw;
+            padding:0;
+            display:grid;
+            grid-template-columns: repeat(var(--ncol),1fr);
+            grid-template-rows:repeat(var(--nrow),1fr);
+            gap:0;
+            
+        }
+        .item{
+            margin:0;
+            box-sizing: border-box;
+            padding:0;
+            /* outline:1px solid var(--borcol); */
+            background-color: var(--icolo);
+            transition: background-color 50ms ease-in-out;
+            overflow: hidden;
+        }
+
+        .brand{
+            background-color: transparent;
+            position: absolute;
+            top:45%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            font-size: 5rem;
+            color:white;
+        }
+
+        .aut{
+            font-family: 'Rock Salt', cursive;
+            color:black;
+            position :absolute;
+            font-size: 2rem;
+            top:48%;
+            left:60%;
+            font-weight: 600;
+        }
+        pre{
+            font-family: 'Carter One', cursive;
+            word-break: keep-all;
+            display:inline;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="e1" data-rows="-1" data-col="-1" class="main"></div>
+    <div class="brand">Hello <pre>NIKE!</pre></div>
+    <p class="aut"><i>-- Just Do It !</i></p>
+    <script defer src="./effects.js"></script>
+</body>
+</html>

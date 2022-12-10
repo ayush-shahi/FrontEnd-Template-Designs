@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("mybc.jpg");
+    background-size: cover;
+    background-position: center top;
+
+}
+.main{
+    height:550px;
+    background-color: transparent;
+    display: flex;
+    width:350px;
+    min-width:250px;
+    margin: 100px auto 0 auto;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+}
+.item{
+    height:54px;
+    width:16%;
+    min-width:50px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-color: purple;
+    border-radius: 5px;
+    /* transition: all 1500ms cubic-bezier(.86,1.51,.71,.91); */
+    transition: all 1200ms;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(232, 56, 179), pink,rgb(232, 56, 179));
+    background-repeat:repeat;
+    background-size: 200% 100%;
+    background-position: 0% 50%;
+    animation: myanime 8s linear infinite;
+    box-shadow: 8px 20px 5px rgb(139, 190, 185);
+}
+@keyframes myanime{
+
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 400% 50%;
+    }
+}   
+a{
+    height:50px;
+    width:100%;
+    box-sizing: border-box;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    bottom:-100%;
+    transition: all 1500ms;
+    border-radius: 5px;
+
+}
+.item .ab{
+    bottom:0;
+}
+.item:hover{
+    height:95%;
+    background-color: aquamarine;
+}
+.fa-brands{
+    font-size: 40px;
+}
+.item:hover .ab{
+    bottom:100%;
+    transform: translateY(100%);
+    transition-property: bottom ,transform;
+    transition-duration: 1300ms , 1200ms ;
+}
+.item:hover .ac{
+    bottom:72.5%;
+    transform: translateY(50%);
+    transition: all 1400ms;
+}
+.item:hover .ad{
+    bottom:50%;
+    transform: translateY(50%);
+    transition: all 1400ms;
+}
+.item:hover .ae{
+    bottom:27.5%;
+    transform: translateY(50%);
+    transition: all 1400ms;
+}
+.item:hover .af{
+    bottom:0%;
+    transition: all 1400ms;
+}
+#itemd{
+    background-color: white;
+    background-image: none;
+    animation: none;
+    border-color: rgb(30, 240, 174);
+}
+#itemd:hover{
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+#iteme{
+    background-color: white;
+    background-image: none;
+    animation: none;
+    border-color: dodgerblue
+}
+#iteme:hover{
+    background-color: rgb(30, 240, 174);;
+    border-color: rgb(30, 240, 174);
+}
+#itema{
+    background-color: white;
+    background-image: none;
+    animation: none;
+    border-color: pink
+}
+#itema:hover{
+    background-color: rgba(247, 113, 89, 0.923);
+    border-color: rgba(247, 113, 89, 0.923);
+}
+#itemb{
+    background-color: white;
+    background-image: none;
+    animation: none;
+    border-color: rgba(247, 113, 89, 0.923);
+}
+#itemb:hover{
+    background-color: rgba(248, 252, 7, 0.982);
+    border-color: rgba(248, 252, 7, 0.982);
+}
